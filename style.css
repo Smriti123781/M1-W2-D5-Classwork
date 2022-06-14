@@ -7,10 +7,15 @@ body{
     background: #1e1b33;
 }
 
+/* INDEX.HTML & PRICING.HTML */
 /* Logo and Header | Navigation Bar */
 
-.logo, ul li{
+.logo, ul li, ul li a{
     color: white;
+}
+
+ul li a{
+    text-decoration: none;
 }
 
 .active{
@@ -18,7 +23,8 @@ body{
 }
 
 nav ul li:hover,
-nav svg:hover{
+nav svg:hover,
+nav ul li a:hover{
     color: #eb4b60e5;
     cursor: pointer;
     transition: 200ms;
@@ -122,7 +128,7 @@ div:first-child .social-icon{
     border: transparent;
     padding: .5em 2.5em;
     border-radius: 2em;
-    margin-left: 2.1em;
+    margin-left: 2em;
     margin-top: 1em;
     border: none;
 }
@@ -137,7 +143,7 @@ div:first-child .social-icon{
     fill: #fff;
     height: 1.5em;
     width: 1.5em;
-    margin-left: 5.4em;
+    margin-left: 5.2em;
 }
 
 .scroll-txt{
@@ -149,7 +155,9 @@ div:first-child .social-icon{
     margin-bottom: .5em;
 }
 
+/* x - Body Content Main - x */
 
+/* About Me */
 .about-me-txt{
 color: #fff;
 font-family: 'arial';
@@ -264,7 +272,9 @@ font-weight: 600;
     font-weight: 400;
     margin-top: .1em;
 }
+/* About Me */
 
+/* Dropdown Menu */
 .abt-drop-content{
     color: #fff;
     background: #22a7b6a2;
@@ -317,10 +327,24 @@ font-weight: 600;
     border-bottom-right-radius: .5em;
 }
 
+/* .exp-contain{
+    z-index: 1;
+} */
+
+/* .experience:hover .abt-drop-content{
+    visibility: visible;
+    display: block;
+}
+.experience:hover .abt-drop-content ul{
+    display: block;
+} */
 
 .nav-items{
     position: relative;
 }
+/* x - Dropdown Menu - x */
+
+/* Services */
 
 .serv-box{
     height: max-content;
@@ -355,7 +379,7 @@ font-weight: 600;
 
 .sb1 img,
 .sb2 img,
-.sb3 img
+.sb3 img,
 .pp1 img{
     height: 6em;
     width: auto;
@@ -363,12 +387,14 @@ font-weight: 600;
 
 .sb1  h3,
 .sb2  h3,
-.sb3  h3{
+.sb3  h3,
+.pp1 h3{
     font-weight: 600;
     margin: .5em 0em;
 }
 
-.serv-box p{
+.serv-box p,
+.pricing-box p{
     font-size: 11pt;
 }
 
@@ -394,8 +420,14 @@ font-weight: 600;
 .serv-txt{
     margin-bottom: 1em;
 }
+/* x - Services - x */
 
-/*Pricing Plans*/
+/* INDEX.HTML & PRICING.HTML */
+
+
+
+/* PRICING.HTML */
+
 .index-pricing-sec{
     display: flex;
     align-items: center;
@@ -403,9 +435,9 @@ font-weight: 600;
 }
 
 .pricing-box{
-    margin-top: 1em;
+    margin-top: 2em;
     height: max-content;
-    width: 17em; 
+    width: 20em; 
     background: white;
     border-radius: 1.5em;
 }
@@ -477,7 +509,7 @@ font-weight: 600;
 
 .exp-status .pricing-box div span .fas{
     color: #eb4b60;
-    margin-left: -.3em;
+    margin-left: -.5em;
     display: block;
 }
 
@@ -530,3 +562,186 @@ font-weight: 600;
     color: white;
 }
 
+/* PRICING.HTML */
+
+/*Portfolio page's style begins from here*/
+.port-nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.port-nav li:hover{
+    color: #eb4b60;
+    cursor: pointer;
+    background: #eb4b605f;
+    border-left: 3px solid rgb(61, 132, 225);
+    border-bottom: 3px solid rgb(61, 132, 225);
+}
+
+.port-nav li.port-active{
+    border-left: 3px solid #eb4b60;
+    border-top-right-radius: .8em;
+    background: #eb4b6038;
+}
+
+.port-nav li{
+    padding: .5em;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top-right-radius: .8em;
+}
+
+.port-hide{
+    display: none !important;
+}
+
+.for-everything,
+.for-arts,
+.for-creative,
+.for-design{
+    display: block;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.for-everything-1,
+.for-everything-2,
+.for-arts-1,
+.for-arts-2,
+.for-creative-1,
+.for-creative-2,
+.for-design-1,
+.for-design-2{
+    margin: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.for-everything-1 span,
+.for-everything-2 span,
+.for-arts-1 span,
+.for-arts-2 span,
+.for-creative-1 span,
+.for-creative-2 span,
+.for-design-1 span,
+.for-design-2 span{
+    display: inline-block;
+    width: 15em;
+    height: 15em;
+    background-color: white;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+/* Images for "Everything" */
+.for-everything-1 span:first-child{
+    background-image: url(https://png.pngtree.com/png-vector/20190611/ourmid/pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496200.jpg);
+}
+
+.for-everything-1 span:nth-child(2){
+    background-image: url(https://www.pngplay.com/wp-content/uploads/13/Web-Designing-PNG-Images-HD.png);
+}
+
+.for-everything-1 span:nth-child(3){
+    background-image: url(https://imgs.search.brave.com/m-jsOfi__ZuoF7uh-Ygcm1plHfxxcNwR-SOTZ0QElTM/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbnB1/bml2ZXJzZS5jb20v/aW1hZ2VzL2V0Yy93/ZWJkZXZlbG9wbWVu/dC5wbmc);
+}
+
+.for-everything-2 span:first-child{
+    background-image: url(https://imgs.search.brave.com/l7rW7hne24-WiEgD20tKN5r5bWE_wQ8pND0CDDxON7w/rs:fit:1200:1077:1/g:ce/aHR0cDovL3d3dy5h/cnMtbmV0d29yay5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMTIvd2ViLWRl/dmVsb3BtZW50LnBu/Zw);
+}
+
+.for-everything-2 span:nth-child(2){
+    background-image: url(https://imgs.search.brave.com/r8F8Es0r8vPr1ZZ7uqZBZVbHIf7KOgtkDwBrqnh_nCs/rs:fit:641:500:1/g:ce/aHR0cHM6Ly9sZXRz/bW9iaWxpdHkuY29t/L2NvbnRlbnQvaW1h/Z2VzL3NpemUvdzIw/MDAvMjAxOS8wNy93/ZWItaWNvbi5wbmc);
+}
+
+.for-everything-2 span:nth-child(3){
+    background-image: url(https://www.lanecode.com/wp-content/uploads/2021/02/cover-img-1-1.png);
+}
+/* Images for "Everything" */
+
+/* Images for "Arts" */
+.for-arts-1 span:first-child{
+    background-image: url(https://imgs.search.brave.com/2PqdmdKv13Rjz3DAG_QxNeWmOUYnPtCrHHIxWBI8hTs/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvcGFsZXR0ZS9w/YWxldHRlX1BORzY4/MjgyLnBuZw);
+}
+
+.for-arts-1 span:nth-child(2){
+    background-image: url(https://imgs.search.brave.com/uWIkjBCUVDRoVmTBoKa3sYedfGQVelwGjaSFLVnf9oM/rs:fit:579:756:1/g:ce/aHR0cDovL3d3dy5w/bmdhbGwuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8zL0FydC1U/cmFuc3BhcmVudC5w/bmc);
+}
+
+.for-arts-1 span:nth-child(3){
+    background-image: url(https://imgs.search.brave.com/LnO-gCnjM8Bh-VmrLtkCw89M3BO0PyPUaRPiV-NHFFo/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9mcmVl/cG5naW1nLmNvbS90/aHVtYi9hYnN0cmFj/dC8zLTItYWJzdHJh/Y3QtcG5nLXBpYy5w/bmc);
+}
+
+.for-arts-2 span:first-child{
+    background-image: url(https://imgs.search.brave.com/_Deag8Vzteme7o18GOvMzMeU2Kl3CHYP0Ax18REHJww/rs:fit:690:726:1/g:ce/aHR0cDovL3d3dy5w/bmdtYXJ0LmNvbS9m/aWxlcy8xMS9QYWlu/dC1BcnQtVHJhbnNw/YXJlbnQtUE5HLnBu/Zw);
+}
+
+.for-arts-2 span:nth-child(2){
+    background-image: url(https://imgs.search.brave.com/tDcYpWKcf1JMhgC8OYbllBbOiTbklhcfsdCBHM4fyMo/rs:fit:960:672:1/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3BuZy1wYWxs/ZXQtcGFsZXR0ZS1w/YWludC1vaWwtcGFp/bnRpbmctcGFpbnRl/ci1hcnQtYnJ1c2gt/OTYwLnBuZw);
+}
+
+.for-arts-2 span:nth-child(3){
+    background-image: url(https://imgs.search.brave.com/ah59Uo00Ht2_RIliRPcxFSXtLjkAW6DxjPYkyNTxKzM/rs:fit:512:512:1/g:ce/aHR0cDovL2ljb25z/Lmljb25hcmNoaXZl/LmNvbS9pY29ucy9y/YWluZHJvcG1lbW9y/eS9nYWlhLTEwLzUx/Mi9BcnQtaWNvbi5w/bmc);
+}
+/* Images for "Arts" */
+
+/* Images for "Creative" */
+.for-creative-1 span:first-child{
+    background-image: url(https://imgs.search.brave.com/qmM02bdNutUC9HpV3hys7iCGzCmp5gbJrNAcHLMf9PM/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5I/M0ttdkhUVGNtWWE3/akhIdGhiUllBSGFI/YSZwaWQ9QXBp);
+}
+
+.for-creative-1 span:nth-child(2){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHmlYTJXPPu0maid1u76ZLzE1Av6uddMciVTN7fSuB-TvDXwJzXPZQ_VimhUKk60ZpRdM&usqp=CAU);
+}
+
+.for-creative-1 span:nth-child(3){
+    background-image: url(https://uxwing.com/wp-content/themes/uxwing/download/36-arts-graphic-shapes/innovation-creativity.png);
+}
+
+.for-creative-2 span:first-child{
+    background-image: url(https://www.seekpng.com/png/detail/116-1169995_rankbrain-creative-thinking-data-transprent-png-free-creative.png);
+}
+
+.for-creative-2 span:nth-child(2){
+    background-image: url(https://www.nicepng.com/png/detail/98-988132_creative-brain-clipart-png-creative-brain-vector-png.png);
+}
+
+.for-creative-2 span:nth-child(3){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLrpHxJQjPrwnICs9-YkAhm7F4OSTypBOEbpnpzB9Qxa5XrWJYSD9l8IcTFsPolcfOeo0&usqp=CAU);
+}
+/* Images for "Creative" */
+
+/* Images for "Design" */
+.for-design-1 span:first-child{
+    background-image: url(https://www.pngmart.com/files/4/Design-Transparent-PNG.png);
+}
+
+.for-design-1 span:nth-child(2){
+    background-image: url(https://www.pngmart.com/files/4/Design-PNG-Photos.png);
+}
+
+.for-design-1 span:nth-child(3){
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/af1d36fe-9a0f-4d1f-b8c6-2f9c46fb461b/d6f30kb-0908e73e-8e5f-47ad-aa86-f99bc92b78af.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FmMWQzNmZlLTlhMGYtNGQxZi1iOGM2LTJmOWM0NmZiNDYxYlwvZDZmMzBrYi0wOTA4ZTczZS04ZTVmLTQ3YWQtYWE4Ni1mOTliYzkyYjc4YWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ll65-6Sa4qxAiYBLLxm713-C-H5u8q6TtP9qNn22EgM);
+}
+
+.for-design-2 span:first-child{
+    background-image: url(https://thumbs.dreamstime.com/b/hipster-lion-head-monochrome-design-png-format-logo-sign-vector-white-background-139383816.jpg);
+}
+
+.for-design-2 span:nth-child(2){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRof6PXNFdXhM7BOneKSE8djnYSHqcvkR-tIw&usqp=CAU);
+}
+
+.for-design-2 span:nth-child(3){
+    background-image: url(https://freepngimg.com/thumb/categories/199.png);
+}
+/* Images for "Design" */
+
+/* x - PORTFOLIO.HTML x - */
